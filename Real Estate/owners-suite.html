@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Owner's Suite</title>
+        <style>
+           *{
+                background-color: lightgrey;
+                font-family:Arial, Helvetica, sans-serif;
+                overflow: hidden;
+            }
+
+            header{
+                text-align: center;
+            }
+
+            .border{
+                border: solid rgb(129, 125, 125) 2px;
+                float: right;
+                border-width: 1px;
+                margin-left: 3%;
+            }
+
+            .mySlides {
+            display: none;
+            }
+
+            .slideshow-container {
+            /*max-width: 1000px;*/
+            position: relative;
+            margin: auto;
+            overflow: hidden;
+            }
+
+            .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+            }
+
+            @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+            }
+
+            .topnav{
+                width: 100%;
+                overflow: hidden;
+               text-align: center;
+            }
+
+            .topnav a{
+                width: 18%;
+                text-decoration: none;
+                font-size: 35px;
+                padding: 14px 16px;
+                text-align: center;
+                /*font-family: Arial, Helvetica, sans-serif;*/
+            }
+
+            .btn{
+            background-color: #9d9896f9;
+            border: none;
+            color: black;
+            padding: 16px 32px;
+            text-align: center;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition: 0.3s;
+            text-decoration: none; 
+            }
+
+            .btn:hover{
+              background-color: lightskyblue;
+              font-weight: bold;
+            }
+
+            p{
+              overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+          <h1>Owner's Suite</h1>
+        </header>
+    <div class="border">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="img/master-bedroom.webp" style="width:100%;">
+            </div>
+        
+        <div class="mySlides fade">
+            <img src="img/guest-bedroom.webp" style="width:100%">
+          </div>
+        </div>
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+    </div>
+    <p style="text-align: center; font-size: 35px; margin-top: 6%;">
+      The completely bespokeexterior is dominated by an external mashrabiya facades that casts delicate light shadows, stunning floor to sky glass windows and an 11.5 metre length suspended glass bridge that connects the ground floor balcony to the pavilion and swimming pool. The villa is also entirely solar powered and comes with ten bedrooms and thirteen bathrooms, making it large enough for big families or those who love to host guests.
+    </p>
+    <script lang="Javascript">
+      let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+let i;
+let slides = document.getElementsByClassName("mySlides");
+let dots = document.getElementsByClassName("dot");
+for (i = 0; i < slides.length; i++) {
+  slides[i].style.display = "none";  
+}
+slideIndex++;
+if (slideIndex > slides.length) {slideIndex = 1}    
+for (i = 0; i < dots.length; i++) {
+  dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";  
+dots[slideIndex-1].className += " active";
+setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+</script>
+    <!--This goes to the Bottom-->
+    <div class="topnav">
+        <nav>
+            <a href="landing.html" target="_self"><button class="btn">Landing</button></a>
+            <a href="living.html" target="_self"><button class="btn">Living Room</button></a>
+            <a href="owners-suite-bathroom.html" target="_self"><button class="btn">Owner's Suite Bathroom</button></a>
+            <a href="slideshow.html" target="_self"><button class="btn">Slideshow</button></a>
+            <a href="video.html" target="_self"><button class="btn">Video</button></a>
+            <a href="home.html" target="_self"><button class="btn">Home</button></a>
+        </nav>
+    </div>
+    </body>
+</html>
