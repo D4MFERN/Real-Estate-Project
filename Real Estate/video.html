@@ -1,0 +1,82 @@
+<!--To Grab the Video, Check out in the Video Folder-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Background Video</title>
+        <style>
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+        .content {
+        position: fixed;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        color: #f1f1f1;
+        width: 100%;
+        padding: 20px;
+        }
+
+        #myBtn {
+        width: 200px;
+        font-size: 18px;
+        padding: 10px;
+        border: none;
+        background: #000;
+        color: #fff;
+        cursor: pointer;
+        width: 14%;
+        }
+        #myBtn:hover {
+         background: #ddd;
+         color: black;
+}
+
+.hov:hover{
+    color: red;
+}
+
+.footer{
+    margin-left: 46%;
+    margin-top: 6%;
+}
+        </style>
+    </head>
+<body>
+    <header>
+        <h1></h1>
+    <nav></nav>
+    </header>
+    <article>
+        <video id="myVideo" autoplay="autoplay" loop="loop" muted="muted">
+            <source src="video/Lavishly Spectacular Luxury Villa in Emirates Hills.mp4" type="video/mp4">
+            <source src="video/Lavishly Spectacular Luxury Villa in Emirates Hills.ogg" type="video/ogg">
+            <source src="video/Lavishly Spectacular Luxury Villa in Emirates Hills.webm" type="video/webm">
+            Your broswer does not support the HTML5 Video Tag.
+        </video>
+    <div class="content">
+        <h1>Real Estate</h1>
+        <p>Real State</p>
+        <div class="hov">
+        <a href="landing.html" title="Back to Landing" ><button id="myBtn" onclick="myFunction()">Landing</button></a>
+        <a href="slideshow.html" title="Slideshow"><button id="myBtn" onclick="myFunction()">Slideshow</button></a>
+        <a href="home.html" title="Home"><button id="myBtn" onclick="myFunction()">Home</button></a>
+        <a href="living.html" title="Living Room"><button id="myBtn" onclick="myFunction()">Living Room</button></a>
+        <a href="owners-suite-bathroom.html" title="Owner's Suite Bathroom"><button id="myBtn" onclick="myFunction()">Owner's Bathroom Suite</button></a>
+        <a href="owners-suite.html" title="Owner's Suite"><button id="myBtn" onclick="myFunction()">Owner's Suite</button></a>
+        </div>
+    </div>
+    </article>
+    <div class="footer">
+        <footer>
+          <p>YOUR NAME | YOUR GRADE LEVEL | 2023 &copy;</p>
+        </footer>
+      </div>
+</body>
+</html>
